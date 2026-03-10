@@ -31,11 +31,12 @@ python ip_info_tool.py
 
 Пример:
 
-Введите IP-адрес: 8.8.8.8
-#IP: 8.8.8.8
-#Страна: US
-#Город: Mountain View
-#Провайдер: AS15169 Google LLC
+Введите IP-адрес: 
+8.8.8.8
+ IP: 8.8.8.8
+ Страна: US
+ Город: Mountain View
+ Провайдер: AS15169 Google LLC
 
 
 ##Лицензия
