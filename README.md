@@ -1,46 +1,37 @@
 # IP Info Tool
 
-Простой инструмент на Python для получения информации о введенном IP-адресе. Программа использует API ipinfo.io для отображения данных о стране, городе и провайдере для указанного IP.
+A simple Python tool for retrieving information about a given IP address. The program uses the ipinfo.io API to display country, city, and provider data for the specified IP.
 
-## Особенности
+## Features
 
-- Запрашивает IP-адрес у пользователя.
-- Показывает страну, город и провайдера по заданному IP.
-- Простота в использовании и настройке.
+    Prompts the user for an IP address.
+    Shows country, city, and provider for the given IP.
+    Easy to use and configure.
 
-## Установка
-
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/ethtoolq/ip-info-tool.git
-
-Перейдите в папку проекта:
-
-cd ip-info-tool
-
-Установите необходимые зависимости:
-
+## Requirements
+```
 pip install requests
+```
+## Usage
 
-## Использование
+Run the program:
 
-Запустите программу:
-
+```
 python ip_info_tool.py
+```
+Enter the IP address you want information for.
 
-Введите IP-адрес, информацию по которому хотите получить.
+## Example
 
-## Пример:
-
-Введите IP-адрес: 
+Enter IP address:
 8.8.8.8
+
+```
 IP: 8.8.8.8
-Страна: US
-Город: Mountain View
-Провайдер: AS15169 Google LLC
+Country: US
+City: Mountain View
+Provider: AS15169 Google LLC
+```
+## License
 
-
-Лицензия
-
-Этот проект распространяется под лицензией MIT. См. файл LICENSE
- для подробностей.
+MIT
