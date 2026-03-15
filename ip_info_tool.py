@@ -1,19 +1,19 @@
 import requests
 
-# запрашиваем IP у пользователя
-ip_address = input("Введите IP-адрес: ")
+# requesting IP
+ip_address = input("Enter IP address: ")
 
-# делаем запрос к ipinfo API
+# making a request to ipinfo API
 url = f"https://ipinfo.io/{ip_address}/json"
 response = requests.get(url)
 
-# если запрос успешен
+# if successful
 if response.status_code == 200:
-    data = response.json()  # получаем данные в формате json
-    # выводим информацию
-    print(f"IP: {data.get('ip', 'Неизвестно')}")
-    print(f"Страна: {data.get('country', 'Неизвестно')}")
-    print(f"Город: {data.get('city', 'Неизвестно')}")
-    print(f"Провайдер: {data.get('org', 'Неизвестно')}")
+    data = response.json()  # get data in JSON format
+    # displaying info
+    print(f"IP: {data.get('ip', 'Unknown')}")
+    print(f"Country: {data.get('country', 'Unknown')}")
+    print(f"City: {data.get('city', 'Unknown')}")
+    print(f"Provider: {data.get('org', 'Unknown')}")
 else:
-    print("Не удалось получить информацию по этому IP.")
+    print("Unable to retrieve information on this IP.")
